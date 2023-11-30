@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Flexbox</title>
+</head>
+ <style>
+    .container{
+        display: grid;
+        height: 500px;
+        grid-template-rows: 1fr 3fr 1fr;
+        grid-template-areas:
+        "nav header header header"
+        "nav article article aside"
+        "nav footer footer footer"
+    }
+    .nav{
+        background-color: #748E63;
+        grid-area: nav;
+        font-size: large;
+        padding: 20px;
+    }
+    .header{
+        background-color: #F9B572;
+        grid-area: header;
+        font-size: larger;
+        padding: 20px;
+    }
+    .article{
+        background-color: #FAF8ED;
+        grid-area: article;
+        font-size: larger;
+        padding: 20px;
+    }
+    .aside{
+        background-color: #99B080;
+        grid-area: footer;
+        font-size: larger;
+        padding: 20px;
+      }
+      
+    .footer{
+        background-color: #F9B572;
+        grid-area: footer;
+        font-size: larger;
+        padding: 20px;
+
+    }
+    .aside{
+        background-color: #FAF8ED;
+        grid-area: aside;
+        font-size: larger;
+        padding: 20px;
+    }
+ </style>
+</head>
+<body>
+ <div class="container">
+    <div class="nav">Nav</div>
+    <div class="header">Header</div>
+    <div class="article">Article</div>
+    <div class="footer">Footer</div>
+    <div class="aside">Aside</div>
+ </div>
+</body>
+</html>
